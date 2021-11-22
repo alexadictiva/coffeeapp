@@ -20,7 +20,7 @@ var app = new Vue({
       fetch(this.url)
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
+          // console.log(data);
           this.products = data.results;
         })
 
@@ -34,11 +34,18 @@ var app = new Vue({
       localStorage.setItem("carrito", JSON.stringify(this.carrito));
     },
     mostrarCarrito: function () {
-      for (let i = 0; i < this.localStorage.carrito.length; i++) {
-        JSON.parse(this.localStorage.carrito)[i].nombre;
-      }
+      /*    for (
+        let i = 0;
+        i < JSON.parse(localStorage.getItem("carrito")).length;
+        i++
+      ) {
+        this.carrito = JSON.parse(localStorage.getItem("carrito"))[i].nombre;
+        console.log(JSON.parse(localStorage.getItem("carrito")));
+      } */
+      this.carrito = JSON.parse(localStorage.getItem("carrito"));
     },
   },
 });
 
 app.fetchApi();
+app.mostrarCarrito();
