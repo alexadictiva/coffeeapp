@@ -13,7 +13,7 @@ var app = new Vue({
     carrito: [],
     mensajePrueba: null,
     //url: "https://rickandmortyapi.com/api/character/",
-    url: "./../local-api/localApi.json",
+    url: "./local-api/localApi.json",
   },
   methods: {
     fetchApi: function () {
@@ -34,14 +34,6 @@ var app = new Vue({
       localStorage.setItem("carrito", JSON.stringify(this.carrito));
     },
     mostrarCarrito: function () {
-      /*    for (
-        let i = 0;
-        i < JSON.parse(localStorage.getItem("carrito")).length;
-        i++
-      ) {
-        this.carrito = JSON.parse(localStorage.getItem("carrito"))[i].nombre;
-        console.log(JSON.parse(localStorage.getItem("carrito")));
-      } */
       this.carrito = JSON.parse(localStorage.getItem("carrito"));
     },
   },

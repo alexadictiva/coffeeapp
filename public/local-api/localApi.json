@@ -11,7 +11,7 @@
       "nombre": "Espresso",
 
       "ingrediente": "Café",
-      "image": "./../assets/img/1.jpg",
+      "image": "./assets/img/1.jpg",
       "precio": "$450,00",
       "descripcion": "Cafe molido fino, con temperatura cercana al punto de ebullición."
     },
@@ -19,7 +19,7 @@
       "id": 2,
       "nombre": "Late",
       "ingrediente": "Chocolate",
-      "image": "./../assets/img/2.jpg",
+      "image": "./assets/img/2.jpg",
       "precio": "$420.00",
       "descripcion": "Cafe preparado a base de café espreso y leche al vapor."
     },
@@ -27,7 +27,7 @@
       "id": 3,
       "nombre": "Mocha",
       "ingrediente": "Chocolate",
-      "image": "./../assets/img/3.jpg",
+      "image": "./assets/img/3.jpg",
       "precio": "$490.00",
       "descripcion": "Cafe con leche, topping de crema de leche, espolvoreado con cacao."
     },
@@ -35,7 +35,7 @@
       "id": 4,
       "nombre": "Cappucino",
       "ingrediente": "Chocolate",
-      "image": "./../assets/img/4.jpg",
+      "image": "./assets/img/4.jpg",
       "precio": "$410.00",
       "descripcion": "Cafe a base de expresso, vapor y espuma de leche a partes iguales."
     },
@@ -43,7 +43,7 @@
       "id": 5,
       "nombre": "Glacé",
       "ingrediente": "Chocolate",
-      "image": "./../assets/img/5.jpg",
+      "image": "./assets/img/5.jpg",
       "precio": "$430.00",
       "descripcion": "Cafe refrescante con espumosa, tipo helado"
     },
@@ -51,7 +51,7 @@
       "id": 6,
       "nombre": "Iced Coffee",
       "ingrediente": "Chocolate",
-      "image": "./../assets/img/6.jpg",
+      "image": "./assets/img/6.jpg",
       "precio": "$480.00",
       "descripcion": "Cafe a base de cafe espresso, vainilla y hielo"
     },
@@ -59,7 +59,7 @@
       "id": 7,
       "nombre": "Americano",
       "ingrediente": "Chocolate",
-      "image": "./../assets/img/7.jpg",
+      "image": "./assets/img/7.jpg",
       "precio": "$400.00",
       "descripcion": "Cafe negro molido medio en polvo"
     },
@@ -67,7 +67,7 @@
       "id": 8,
       "nombre": "Irish",
       "ingrediente": "Chocolate",
-      "image": "./../assets/img/8.jpg",
+      "image": "./assets/img/8.jpg",
       "precio": "$420.00",
       "descripcion": "Cafe con leche desnatada en polvo, grasa vegetal hidrogenada y jarabe de glucosa."
     },
@@ -75,7 +75,7 @@
       "id": 9,
       "nombre": "Coffee Milk Shake",
       "ingrediente": "Chocolate",
-      "image": "./../assets/img/9.jpg",
+      "image": "./assets/img/9.jpg",
       "precio": "$450.00",
       "descripcion": "Cafe con leche a base de helado con cacao, miel y hielo."
     },
@@ -83,7 +83,7 @@
       "id": 10,
       "nombre": "Take Away",
       "ingrediente": "Chocolate",
-      "image": "./../assets/img/10.jpg",
+      "image": "./assets/img/10.jpg",
       "precio": "$530.00",
       "descripcion": "Cafe con leche al gusto para llevar."
     },
@@ -91,7 +91,7 @@
       "id": 11,
       "nombre": "Frappe",
       "ingrediente": "Chocolate",
-      "image": "./../assets/img/11.jpg",
+      "image": "./assets/img/11.jpg",
       "precio": "$490.00",
       "descripcion": "Cafe con leche fría, almibar de café y azucar."
     },
@@ -99,7 +99,7 @@
       "id": 12,
       "nombre": "Take Away Frappe",
       "ingrediente": "Chocolate",
-      "image": "./../assets/img/12.jpg",
+      "image": "./assets/img/12.jpg",
       "precio": "$520.00",
       "descripcion": "Cafe frappe para llegar."
     }
