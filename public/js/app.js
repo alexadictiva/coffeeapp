@@ -15,6 +15,10 @@ var app = new Vue({
     //url: "https://rickandmortyapi.com/api/character/",
     url: "./local-api/localApi.json",
   },
+  create: function (){
+    app.fetchApi();
+    app.mostrarCarrito();
+  },
   methods: {
     fetchApi: function () {
       fetch(this.url)
@@ -39,5 +43,4 @@ var app = new Vue({
   },
 });
 
-app.fetchApi();
-app.mostrarCarrito();
+
