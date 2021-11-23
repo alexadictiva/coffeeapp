@@ -38,7 +38,12 @@ var app = new Vue({
       localStorage.setItem("carrito", JSON.stringify(this.carrito));
     },
     mostrarCarrito: function () {
-      this.carrito = JSON.parse(localStorage.getItem("carrito"));
+      let datos = JSON.parse(localStorage.getItem("carrito"));
+      if(datos == null){
+        this.carrito = []
+      }else{
+        this.carrito = datos;
+      }
     },
   },
 });
