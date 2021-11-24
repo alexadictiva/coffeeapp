@@ -28,7 +28,8 @@ var app = new Vue({
 
         .catch((err) => console.error(err));
     },
-    agregarCarrito: function (product) {
+    agregarCarrito: function (product, index) {
+      console.log(index);
       console.log(
         "producto seleccionado: " + product.id + " " + product.nombre
       );

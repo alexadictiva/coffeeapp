@@ -73,7 +73,10 @@
 
       <section class="container">
         <div class="row">
-          <div class="col-12 col-md-4 my-3" v-for="product in products">
+          <div
+            class="col-12 col-md-4 my-3"
+            v-for="(product, index) in products"
+          >
             <div class="card">
               <img
                 v-bind:src="product.image"
@@ -90,10 +93,15 @@
 
                 <button
                   class="btn btn-info"
-                  v-bind:id="'btn'+product.id"
-                  v-on:click="agregarCarrito(product)"
+                  v-on:click="agregarCarrito(product, index)"
                 >
                   Agregar
+                </button>
+                <button
+                  class="btn btn-danger"
+                  v-on:click="eliminarProducto(index)"
+                >
+                  Eliminar
                 </button>
               </div>
             </div>
