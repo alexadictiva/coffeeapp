@@ -7,7 +7,7 @@ const urlsToCache = [
   "./assets/icon/coffee-48.png",
   "./js/vue.js",
   "./js/app.js",
-  "./local-api/localApi.json",
+  "./../local-api/localApi.json",
 ];
 
 self.addEventListener("install", function (evento) {

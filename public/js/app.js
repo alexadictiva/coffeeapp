@@ -11,16 +11,18 @@ var app = new Vue({
   data: {
     products: [],
     carrito: [],
-    mensajePrueba: null,
-    //url: "https://rickandmortyapi.com/api/character/",
     url: "./local-api/localApi.json",
+  },
+  created: function () {
+    this.fetchApi();
+    this.mostrarCarrito();
   },
   methods: {
     fetchApi: function () {
       fetch(this.url)
         .then((response) => response.json())
         .then((data) => {
-          // console.log(data);
+          console.log(data);
           this.products = data.results;
         })
 
@@ -34,10 +36,12 @@ var app = new Vue({
       localStorage.setItem("carrito", JSON.stringify(this.carrito));
     },
     mostrarCarrito: function () {
-      this.carrito = JSON.parse(localStorage.getItem("carrito"));
+      let datos = JSON.parse(localStorage.getItem("carrito"));
+      if (datos == null) {
+        this.carrito = [];
+      } else {
+        this.carrito = datos;
+      }
     },
   },
 });
-
-app.fetchApi();
-app.mostrarCarrito();
