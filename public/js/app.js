@@ -11,11 +11,13 @@ var app = new Vue({
   data: {
     products: [],
     carrito: [],
+    suma: 0,
     url: "./local-api/localApi.json",
   },
   created: function () {
     this.fetchApi();
     this.mostrarCarrito();
+    this.totalizar();
   },
   methods: {
     fetchApi: function () {
@@ -43,6 +45,20 @@ var app = new Vue({
       } else {
         this.carrito = datos;
       }
+    },
+    totalizar: function () {
+      console.log("totalizar");
+      let totalPrecios = this.carrito.reduce(
+        (suma, valor) =>
+          typeof valor.precio == "number" ? suma + valor.precio : suma,
+        0
+      );
+      console.log(totalPrecios);
+      this.suma = totalPrecios;
+    },
+    eliminarProducto: function (index) {
+      this.carrito.splice(index, 1);
+      localStorage.setItem("carrito", JSON.stringify(this.carrito));
     },
   },
 });
