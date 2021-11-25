@@ -4,7 +4,7 @@
   "start_url": "/?utm_source=homescreen",
   "display": "standalone",
   "background_color": "#ffffff",
-  "description": "PWA mini E-commerce para proyecto final de la materia PWA de EMAE",
+  "description": "PWA sobre café y micro E-commerce para proyecto final de la materia PWA de EMAE",
   "orientation": "portrait",
   "theme_color": "#6f2020",
   "icons": [

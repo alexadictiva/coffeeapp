@@ -12,6 +12,7 @@ var app = new Vue({
     products: [],
     carrito: [],
     suma: 0,
+
     url: "./local-api/localApi.json",
   },
   created: function () {

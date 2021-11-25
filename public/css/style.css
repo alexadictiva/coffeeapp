@@ -1,3 +1,53 @@
+:root {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "David Libre", serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
 .navbar {
   background: linear-gradient(to bottom, #6f2020, #eebe21 100%);
+}
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-collapse {
+  width: 100%;
+}
+.navbar-nav {
+  width: 100%;
+
+  justify-content: space-between;
+}
+.nav-link {
+  color: #fff !important;
+  font-weight: bold !important;
+}
+main {
+  padding-top: 60px;
+}
+.card {
+  min-height: 580px;
+  max-height: 650px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btn {
+  background: #6f2020;
+  border: 0;
+  color: #eebe21;
+  font-weight: bold;
+}
+.btn:hover {
+  background: #eebe21;
+  color: #6f2020;
 }
