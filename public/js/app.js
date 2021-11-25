@@ -37,6 +37,7 @@ var app = new Vue({
       );
       this.carrito.push(product);
       localStorage.setItem("carrito", JSON.stringify(this.carrito));
+      this.totalizar();
     },
     mostrarCarrito: function () {
       let datos = JSON.parse(localStorage.getItem("carrito"));
@@ -59,6 +60,7 @@ var app = new Vue({
     eliminarProducto: function (index) {
       this.carrito.splice(index, 1);
       localStorage.setItem("carrito", JSON.stringify(this.carrito));
+      this.totalizar();
     },
   },
 });
